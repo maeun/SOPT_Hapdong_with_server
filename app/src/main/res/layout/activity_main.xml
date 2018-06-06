@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/actionbar_layout"/>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/main_home_btn"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="#e0e0e0"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:scaleType="centerInside"
+            android:padding="10dp"/>
+        <ImageButton
+            android:id="@+id/main_bookmark_btn"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="#e0e0e0"
+            android:layout_weight="1"
+            android:src="@drawable/bookmark"
+            android:scaleType="centerInside"
+            android:padding="10dp"/>/>
+
+    </LinearLayout>
+
+</RelativeLayout>
